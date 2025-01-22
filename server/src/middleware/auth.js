@@ -54,12 +54,12 @@ const refresh = (req, res, next) => {
         const accessToken = jwt.sign(
             { email: decoded.email, id: decoded.id }, // Include user info as needed
             process.env.ACCESS_TOKEN_SECRET,
-            { expiresIn: "1m" } // Access token valid for 1 minute
+            { expiresIn: "1d" } // Access token valid for 1 minute
         );
 
         // Set the new access token in cookies
         res.cookie("accessToken", accessToken, {
-            maxAge: 1 * 60 * 1000, // 1 minute
+            maxAge: 1 * 24 * 60 * 60 * 1000, // 1 day
             httpOnly: true,
             //secure: process.env.NODE_ENV === "production", // Secure in production
             //sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax", // Cross-site cookie settings

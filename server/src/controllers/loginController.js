@@ -28,13 +28,13 @@ const login = async (req, res) => {
     )
 
     res.cookie("accessToken", accessToken, {
-        maxAge: 1 * 60 * 1000,
+        maxAge: 1 * 24 * 60 * 60 * 1000,
         httpOnly: true,
         // secure: true,
         // sameSite: none
     })
     res.cookie("refreshToken", refreshToken, {
-        maxAge: 2  * 60 * 1000,
+        maxAge: 2 * 24 * 60 * 60 * 1000,
         httpOnly: true,
         // secure: true,
         // sameSite: none
