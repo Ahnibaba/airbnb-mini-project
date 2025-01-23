@@ -9,7 +9,7 @@ const PlaceImg = ({ place, index, className= null }) => {
     }
     return (
 
-        <img key={index} className={className} src={`http://localhost:4321/uploads/${place.addedPhotos[index]}`} alt="" />
+        <img key={index} className={className} src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${place.addedPhotos[index]}`} alt="" />
 
     )
 }

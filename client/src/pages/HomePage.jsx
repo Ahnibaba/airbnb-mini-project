@@ -20,7 +20,7 @@ const HomePage = () => {
         <Link to={`/place/${place._id}`} key={index} className="">
           <div className="bg-gray-500 mb-2 rounded-2xl flex">
             {place.addedPhotos?.[0] && (
-              <img className="rounded-2xl object-cover aspect-square" src={`http://localhost:4321/uploads/${place.addedPhotos[0]}`} alt="" />
+              <img className="rounded-2xl object-cover aspect-square" src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${place.addedPhotos[0]}`} alt="" />
             )}
           </div>
           

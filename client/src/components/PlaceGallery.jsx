@@ -21,7 +21,7 @@ const PlaceGallery = ({ place }) => {
                     </div>
                     {place?.addedPhotos.length > 0 && place.addedPhotos.map((photo, index) => (
                         <div className="" key={index}>
-                            <img src={`http://localhost:4321/uploads/${photo}`} alt="" />
+                            <img src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${photo}`} alt="" />
                         </div>
                     ))}
                 </div>
@@ -34,17 +34,17 @@ const PlaceGallery = ({ place }) => {
                     <div className="">
                         {place.addedPhotos?.[0] && (
                             <div className="">
-                                <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={`http://localhost:4321/uploads/${place.addedPhotos[0]}`} alt="" />
+                                <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${place.addedPhotos[0]}`} alt="" />
                             </div>
                         )}
                     </div>
                     <div className="grid">
                         {place.addedPhotos?.[1] && (
-                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={`http://localhost:4321/uploads/${place.addedPhotos[1]}`} alt="" />
+                            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${place.addedPhotos[1]}`} alt="" />
                         )}
                         <div className="overflow-hidden">
                             {place.addedPhotos?.[2] && (
-                                <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={`http://localhost:4321/uploads/${place.addedPhotos[2]}`} alt="" />
+                                <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={`https://airbnb-mini-project-uuu2.onrender.com/uploads/${place.addedPhotos[2]}`} alt="" />
                             )}
                         </div>
                     </div>
