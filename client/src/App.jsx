@@ -15,7 +15,8 @@ import PlacePage from "./pages/PlacePage"
 import BookingsPage from "./pages/BookingsPage"
 import BookingPage from "./pages/BookingPage"
 
-axios.defaults.baseURL = "http://localhost:4321"
+//axios.defaults.baseURL = "http://localhost:4321"
+axios.defaults.baseURL = "https://airbnb-mini-project-uuu2.onrender.com"
 
 const App = () => {
   const { user, loading } = useContext(UserContext)

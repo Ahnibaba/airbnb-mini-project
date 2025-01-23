@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")))
 app.use(express.static(path.join(__dirname, "..", "public")))
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://airbnb-mini-project.vercel.app",
     credentials: true
 }))
 app.use(cookieParser())
