@@ -62,7 +62,7 @@ const refresh = (req, res, next) => {
             maxAge: 1 * 24 * 60 * 60 * 1000, // 1 day
             httpOnly: true,
             secure: true,
-            sameSite: none
+            sameSite: "none"
         });
 
         req.body.user = decoded; // Attach user info to request
