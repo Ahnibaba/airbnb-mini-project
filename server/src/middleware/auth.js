@@ -61,8 +61,8 @@ const refresh = (req, res, next) => {
         res.cookie("accessToken", accessToken, {
             maxAge: 1 * 24 * 60 * 60 * 1000, // 1 day
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production", // Secure in production
-            sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax", // Cross-site cookie settings
+            secure: true,
+            sameSite: none
         });
 
         req.body.user = decoded; // Attach user info to request
