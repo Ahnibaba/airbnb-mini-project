@@ -12,6 +12,9 @@ const uploadRouter = require("./routes/uploadRoute")
 const placesRouter = require("./routes/placesRoute")
 const bookRouter = require("./routes/bookRoute")
 
+const origin = "https://airbnb-mini-project.vercel.app"
+//const origin = "http://localhost:5173"
+
 
 const app = express()
 
@@ -21,7 +24,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")))
 app.use(express.static(path.join(__dirname, "..", "public")))
 app.use(cors({
-    origin: "https://airbnb-mini-project.vercel.app",
+    origin: origin,
     credentials: true
 }))
 app.use(cookieParser())

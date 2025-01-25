@@ -10,6 +10,7 @@ function UserContextProvider({ children }) {
     const[user, setUser] = useState(null)
     const[loading, setLoading] = useState(true)
     const[error, setError] = useState(true)
+    
 
     const[data, setData] = useState({
       title: "",
